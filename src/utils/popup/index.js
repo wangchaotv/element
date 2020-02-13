@@ -44,11 +44,18 @@ export default {
     }
   },
 
+  /**
+   * 生成一个id、并注册
+   * 在popupManager中有个对象instances会记录id和this
+   */
   beforeMount() {
     this._popupId = 'popup-' + idSeed++;
     PopupManager.register(this._popupId, this);
   },
 
+  /**
+   * 注销id和对应的this
+   */
   beforeDestroy() {
     PopupManager.deregister(this._popupId);
     PopupManager.closeModal(this._popupId);
