@@ -22,6 +22,7 @@ if (componentFile.some(item => item.lang === lang)) {
   console.error(`${lang} already exists.`);
   process.exit(1);
 }
+// 将 en-US 的配置复制一份给新语言 lang
 let componentNew = Object.assign({}, componentFile.filter(item => item.lang === 'en-US')[0], { lang });
 componentFile.push(componentNew);
 fileSave(path.join(__dirname, '../../examples/i18n/component.json'))

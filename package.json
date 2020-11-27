@@ -13,11 +13,12 @@
   "scripts": {
     "dev": "npm run bootstrap && npm run build:file && npm run webpack:server & npm run node:template",
     "dist": "npm run clean && npm run build:file && npm run lint && npm run webpack:conf && npm run webpack:common && npm run webpack:component && npm run build:utils && npm run build:umd && npm run build:theme",
-    "deploy:build": "npm run build:file && cross-env NODE_ENV=production webpack --config build/webpack.demo.js && echo element.eleme.io>>examples/element-ui/CNAME",
+    "deploy:build": "npm run build:file && npm run webpack:demo && echo element.eleme.io>>examples/element-ui/CNAME",
     "--------": "--------",
     "webpack:conf": "webpack --config build/webpack.conf.js",
     "webpack:common": "webpack --config build/webpack.common.js",
     "webpack:component": "webpack --config build/webpack.component.js",
+    "webpack:demo": "cross-env NODE_ENV=production webpack --config build/webpack.demo.js",
     "webpack:server": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js",
     "-------": "--------",
     "node:template": "node build/bin/template.js",

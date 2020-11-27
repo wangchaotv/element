@@ -12,8 +12,14 @@
 - terser-webpack-plugin
 - vue-loader
 - progress-bar-webpack-plugin
+- mini-css-extract-plugin
+- html-webpack-plugin
+- progress-bar-webpack-plugin
+- optimize-css-assets-webpack-plugin
+- uglifyjs-webpack-plugin
 
 # NPM Package
 
 - json-templater
 - uppercamelcase
+- file-save

@@ -9,9 +9,8 @@
       "request": "launch",
       "name": "Launch Program",
       "program": "${file}",
-      "skipFiles": [
-        "<node_internals>/**"
-      ]
+      "args": ["test"],
+      "skipFiles": ["<node_internals>/**"]
     },
     {
       "type": "node",
@@ -50,6 +49,16 @@
       "runtimeExecutable": "npm",
       "sourceMaps": false,
       "runtimeArgs": ["run-script", "webpack:common"],
+      "port": 9229,
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "webpack:demo",
+      "runtimeExecutable": "npm",
+      "sourceMaps": false,
+      "runtimeArgs": ["run-script", "webpack:demo"],
       "port": 9229,
       "skipFiles": ["<node_internals>/**"]
     },
