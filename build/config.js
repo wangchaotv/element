@@ -1,3 +1,8 @@
+/**
+ * 主要功能:
+ *
+ * 1. 提供 webpack 需要的基础配置, 被多份 webpack.***.js 引用
+ */
 var path = require('path');
 var fs = require('fs');
 var nodeExternals = require('webpack-node-externals');

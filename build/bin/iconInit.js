@@ -1,6 +1,6 @@
 'use strict';
 /**
- * 此文件主要功能:
+ * 主要功能:
  *
  * 1. 将 packages/theme-chalk/src/icon.scss 包含中伪元素选择器(:before)的 icon名称部分提取出来
  * 2. 将所有 icon 名称以数组的形式写入 examples/icon.json

@@ -1,6 +1,6 @@
 'use strict';
 /**
- * 此文件主要功能:
+ * 主要功能:
  *
  * examples/i18n 页面、组件的国际化文案
  * examples/pages/template 项目文档的文档模板(标准的 vue 格式)

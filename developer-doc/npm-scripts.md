@@ -8,7 +8,7 @@
     |- npm run webpack:conf
     |- npm run webpack:common
     |- npm run webpack:component
-    |- npm run build:utils
+    |- npm run build:utils 用babel处理 `src` 目录下的几个目录(忽略 src/index.js), 输出到 `lib`
     |- npm run build:umd
     |- npm run build:theme
 ```
